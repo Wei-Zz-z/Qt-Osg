@@ -42,8 +42,9 @@ private:
 
     osgQOpenGLWidget* osgWidget;
     QString m_fileName;
-    std::vector<QString> tilePaths = {};
+    std::vector<QString> tilePaths = {};//需要加载的文件集合
 
 };
 
 #endif // WIDGET_H
+
