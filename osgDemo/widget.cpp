@@ -44,7 +44,7 @@ void Widget::initOSG()
     // 加载文件集合到根节点
     sceneRoot->addChild(mergeTilesets());
 
-    pViewer->setSceneData(node);
+    pViewer->setSceneData(sceneRoot);
 }
 
 //暂时无用
@@ -78,6 +78,7 @@ osg::ref_ptr<osg::Group> Widget::mergeTilesets()
         }
         return root;
 }
+
 
 
 
